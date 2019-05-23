@@ -1,0 +1,29 @@
+{
+    "name": "ayman-elmalah/whmcs",
+    "description": "A Laravel package for handling the use of whmcs api and writing clean and cool code",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ayman Elmalah",
+            "email": "aymanelmalah77@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AymanElmalah\\Whmcs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AymanElmalah\\Whmcs\\WhmcsServiceProvider"
+            ],
+            "aliases": {
+                "Whmcs": "AymanElmalah\\Whmcs\\Facades\\Whmcs"
+            }
+        }
+    }
+}
