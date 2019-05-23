@@ -10,6 +10,10 @@ At laravel project install package using composer
 ```
 composer require ayman-elmalah/whmcs
 ```
+Then you can run command to publich you vendor config files
+```
+php artisan vendor:publish --provider=AymanElmalah\Whmcs\WhmcsServiceProvider
+```
 The package is compatible with laravel 5.5 or later so you don't need to set providers or aliases for the package, we're using laravel auto discovery
 
 ## Get Your Credentials From Whmcs
@@ -26,7 +30,7 @@ The package is compatible with laravel 5.5 or later so you don't need to set pro
  ### To send request, you can use CURL request or localApi when you are in whmcs local project
  you can add route for post request to do an action
  ```
- Route::post('whmcs/action', 'WhmcsrController@action');
+ Route::post('whmcs/action', 'WhmcsController@action');
  ```
  At the controller, you can use one of two methods, curl or localApi to execute action to your whmcs
  ```
