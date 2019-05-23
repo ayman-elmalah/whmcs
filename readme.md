@@ -10,7 +10,10 @@ At laravel project install package using composer
 ```
 composer require ayman-elmalah/whmcs
 ```
-
+Then you can run command to publish you vendor config files
+```
+php artisan vendor:publish --provider=AymanElmalah\Whmcs\WhmcsServiceProvider
+```
 The package is compatible with laravel 5.5 or later so you don't need to set providers or aliases for the package, we're using laravel auto discovery
 
 ## Get Your Credentials From Whmcs
