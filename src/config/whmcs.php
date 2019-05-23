@@ -30,5 +30,5 @@ return [
     | It's can be https://www.yourdomain.com/includes/api.php
     |
     */
-    'url' => env('WHMCS_PASSWORD', null),
+    'url' => env('WHMCS_URL', null),
 ];
