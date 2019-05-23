@@ -10,7 +10,7 @@ At laravel project install package using composer
 ```
 composer require ayman-elmalah/whmcs
 ```
-Then you can run command to publich you vendor config files
+Then you can run command to publish your vendor config files
 ```
 php artisan vendor:publish --provider=AymanElmalah\Whmcs\WhmcsServiceProvider
 ```
