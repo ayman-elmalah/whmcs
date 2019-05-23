@@ -11,6 +11,7 @@ class WhmcsServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
+        $this->mergeConfigFrom(__DIR__.'/config/whmcs.php', 'whmcs');
         $this->publishes([__DIR__.'/config/whmcs.php' => config_path('whmcs.php')]);
     }
 
